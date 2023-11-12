@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Szymon Braune - Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="formularz">
+        <label for="imie">Imię</label>
+        <input type="text" id="imie" name="imie" required placeholder="Imię"><br>
+
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" id="nazwisko" name="nazwisko" required placeholder="Nazwisko"><br>
+
+        <label for="data">Data (rrrr-mm-dd):</label>
+        <input type="text" id="data" name="data" required placeholder="rrrr-mm-dd"><br>
+
+        <label for="trzezwy">Czy będziesz trzeźwy:</label>
+        <select id="trzezwy" name="trzezwy" required>
+            <option value="">---Wybierz Opcję---</option>
+            <option value="tak">Tak</option>
+            <option value="nie">Nie</option>
+        </select><br>
+
+        <label for="siedzenie">Gdzie chcesz siedzieć:</label>
+        <select id="siedzenie" name="siedzenie" required>
+            <option value="">---Wybierz siedzenie---</option>
+            <option value="1">Siedzenie 1</option>
+            <option value="2">Siedzenie 2</option>
+            <option value="3">Siedzenie 3</option>
+            <option value="4">Siedzenie 4</option>
+            <option value="5">Siedzenie 5</option>
+            <option value="6">Siedzenie 6</option>
+            <option value="7">Siedzenie 7</option>
+            <option value="8">Siedzenie 8</option>
+            <option value="9">Siedzenie 9</option>
+            <option value="10">Siedzenie 10</option>
+        </select>
+
+        <label for="zgoda" id="zgoda-text">Zgadzam się na przetwarzanie danych osobowych</label><br>
+        <input type="checkbox" id="zgoda" name="zgoda" required>
+
+        <input type="submit" id="submit" value="Rezerwuj">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wynik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="imie"></h1>
+        <h1 id="nazwisko"></h1>
+        <h1 id="data"></h1>
+        <h1 id="trzezwy"></h1>
+        <h1 id="siedzenie"></h1>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var storedData = localStorage.getItem('formData');
+
+            if (storedData) {
+                var formData = JSON.parse(storedData);
+                document.getElementById('imie').textContent = "Imię: " + formData.imie;
+                document.getElementById('nazwisko').textContent = "Nazwisko: " + formData.nazwisko;
+                document.getElementById('data').textContent = "Data: " + formData.data;
+                document.getElementById('trzezwy').textContent = "Trzeźwy: " + formData.trzezwy;
+                document.getElementById('siedzenie').textContent = "Siedzenie: " + formData.siedzenie;
+            }
+        });
+    </script>
+</body>
+
+</html>
