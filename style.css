@@ -50,3 +50,9 @@ input[type="checkbox"]{
     text-shadow: 2px 2px black;
     transition: 0.1s ease-in;
 }
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.05);
+}

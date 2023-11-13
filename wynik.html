@@ -22,9 +22,50 @@
 
             if (storedData) {
                 var formData = JSON.parse(storedData);
+                let month = "Stycznia";
+
+                switch (formData.miesiac){
+                    case 0:
+                        month = "Stycznia";
+                        break;
+                    case 1:
+                        month = "Lutego";
+                        break;
+                    case 2:
+                        month = "Marca";
+                        break;
+                    case 3:
+                        month = "Kwietnia";
+                        break;
+                    case 4:
+                        month = "Maja";
+                        break;
+                    case 5:
+                        month = "Czerwca";
+                        break;
+                    case 6:
+                        month = "Lipca";
+                        break;
+                    case 7:
+                        month = "Sierpnia";
+                        break;
+                    case 8:
+                        month = "Września";
+                        break;
+                    case 9:
+                        month = "Października";
+                        break;
+                    case 10:
+                        month = "Listopada";
+                        break;
+                    case 11:
+                        month = "Grudnia";
+                        break;
+                }
+
                 document.getElementById('imie').textContent = "Imię: " + formData.imie;
                 document.getElementById('nazwisko').textContent = "Nazwisko: " + formData.nazwisko;
-                document.getElementById('data').textContent = "Data: " + formData.data;
+                document.getElementById('data').textContent = "Data: " + formData.dzien + " " + month + " " + formData.rok + " Roku";
                 document.getElementById('trzezwy').textContent = "Trzeźwy: " + formData.trzezwy;
                 document.getElementById('siedzenie').textContent = "Siedzenie: " + formData.siedzenie;
             }
