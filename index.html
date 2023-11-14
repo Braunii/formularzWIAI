@@ -9,14 +9,15 @@
 
 <body>
     <form id="formularz">
+        <h1 id="warning">Nieprawidłowa data!</h1>
         <label for="imie">Imię</label>
-        <input type="text" id="imie" name="imie" required placeholder="Imię"><br>
+        <input type="text" id="imie" name="imie" placeholder="Imię" required><br>
 
         <label for="nazwisko">Nazwisko</label>
-        <input type="text" id="nazwisko" name="nazwisko" required placeholder="Nazwisko"><br>
+        <input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" required><br>
 
         <label for="data">Data (rrrr-mm-dd):</label>
-        <input type="text" id="data" name="data" required placeholder="rrrr-mm-dd" onchange="sprawdzDate(this)"><br>
+        <input type="text" id="data" name="data" placeholder="rrrr-mm-dd" onchange="sprawdzDate(this)" required><br>
 
         <label for="trzezwy">Czy będziesz trzeźwy:</label>
         <select id="trzezwy" name="trzezwy" required>
@@ -42,6 +43,8 @@
 
         <label for="zgoda" id="zgoda-text">Zgadzam się na przetwarzanie danych osobowych</label><br>
         <input type="checkbox" id="zgoda" name="zgoda" required>
+
+        <input type="reset" value="Wyczyść" id="reset">
 
         <input type="submit" id="submit" value="Rezerwuj">
     </form>
